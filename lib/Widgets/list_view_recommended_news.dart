@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newsyy/Widgets/card_recommended_news.dart';
+import 'package:newsyy/Widgets/card_news.dart';
 import 'package:newsyy/models/news_item.dart';
 
 
@@ -15,7 +15,7 @@ class ListViewRecommendedNews extends StatelessWidget {
              physics:const NeverScrollableScrollPhysics(),
              shrinkWrap: true,
               itemCount:articles.length,
-              itemBuilder: (context, index) =>CardRecommendedNews(newsItem: articles[index],),
+              itemBuilder: (context, index) =>CardNews(newsItem: articles[index],),
             );
   }
 }

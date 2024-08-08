@@ -3,16 +3,16 @@ import 'package:newsyy/Widgets/custom_text.dart';
 import 'package:newsyy/models/news_item.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
-class CardRecommendedNews extends StatefulWidget {
-  const CardRecommendedNews({super.key,required this.newsItem});
+class CardNews extends StatefulWidget {
+  const CardNews({super.key,required this.newsItem});
 
 final NewsItem newsItem;
 
   @override
-  State<CardRecommendedNews> createState() => _CardRecommendedNewsState();
+  State<CardNews> createState() => _CardNewsState();
 }
 
-class _CardRecommendedNewsState extends State<CardRecommendedNews> {
+class _CardNewsState extends State<CardNews> {
 
 
 Future<void> _launchUrl() async {
