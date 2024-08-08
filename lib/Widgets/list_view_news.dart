@@ -4,8 +4,8 @@ import 'package:newsyy/models/news_item.dart';
 
 
 // ignore: must_be_immutable
-class ListViewRecommendedNews extends StatelessWidget {
-  ListViewRecommendedNews({super.key,required this.articles});
+class ListViewNews extends StatelessWidget {
+  ListViewNews({super.key,required this.articles});
  
   List<NewsItem> articles=[];
 

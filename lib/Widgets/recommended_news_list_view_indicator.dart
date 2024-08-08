@@ -1,7 +1,7 @@
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:newsyy/Widgets/list_view_recommended_news.dart';
+import 'package:newsyy/Widgets/list_view_news.dart';
 import 'package:newsyy/models/news_item.dart';
 import 'package:newsyy/services/news_services_api.dart';
 
@@ -29,7 +29,7 @@ void initState() {
       future: future,
       builder:(context,snapshot){
       if (snapshot.hasData) {
-        return ListViewRecommendedNews(articles: snapshot.data??[],);
+        return ListViewNews(articles: snapshot.data??[],);
       }else if(snapshot.hasError){
         return const Center(child: Text('oops there was an error now try again later sweetie'));
       }else{
