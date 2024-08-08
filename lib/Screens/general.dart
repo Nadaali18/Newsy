@@ -6,6 +6,11 @@ class General extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const BuildCategoriesScreen(text: 'General News', color: const Color.fromARGB(255, 124, 33, 27)) ;
+    return const BuildCategoriesScreen(
+      color1: Color.fromARGB(255, 79, 16, 12),
+      text: 'General News',
+      color:  Color.fromARGB(255, 124, 33, 27),
+      category: 'general',
+      ) ;
   }
 }

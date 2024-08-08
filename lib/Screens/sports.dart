@@ -7,6 +7,11 @@ class Sports extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const BuildCategoriesScreen(text: 'Sports News', color: Color.fromARGB(255, 60, 150, 63)) ;
+    return  const BuildCategoriesScreen(
+      color1:Color.fromARGB(255, 24, 77, 25) ,
+      text: 'Sports News', 
+      color: Color.fromARGB(255, 60, 150, 63),
+      category: 'sports',
+      ) ;
   }
 }

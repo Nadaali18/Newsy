@@ -6,6 +6,11 @@ class Science extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const BuildCategoriesScreen(text: 'Science News', color:  Color.fromARGB(255, 167, 66, 3)) ;
+    return  const BuildCategoriesScreen(
+      color1: Color.fromARGB(255, 103, 40, 1),
+      text: 'Science News', 
+      color:  Color.fromARGB(255, 167, 66, 3),
+      category: 'science',
+      ) ;
   }
 }

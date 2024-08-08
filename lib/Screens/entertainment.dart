@@ -6,6 +6,11 @@ class Entertainment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const BuildCategoriesScreen(text: 'Entertainment News', color: Color.fromARGB(255, 145, 35, 164))  ;
+    return const BuildCategoriesScreen(
+      color1:Color.fromARGB(255, 79, 14, 91) ,
+      text: 'Entertainment News', 
+      color: Color.fromARGB(255, 145, 35, 164),
+      category: 'entertainment',
+      );
   }
 }

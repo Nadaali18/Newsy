@@ -7,6 +7,11 @@ class Health extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const BuildCategoriesScreen(text: 'Health News', color: Color.fromARGB(255, 28, 127, 207)) ;
+    return  const BuildCategoriesScreen(
+      color1: Color.fromARGB(255, 15, 81, 135),
+      text: 'Health News',
+      color: Color.fromARGB(255, 28, 127, 207),
+      category: 'health',
+      ) ;
   }
 }

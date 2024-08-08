@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:newsyy/Widgets/card_recommended_news.dart';
+import 'package:newsyy/models/news_item.dart';
 
-class ListViewRecommendedNews extends StatefulWidget {
-  const ListViewRecommendedNews({super.key});
 
-  @override
-  State<ListViewRecommendedNews> createState() => _ListViewRecommendedNewsState();
-}
+// ignore: must_be_immutable
+class ListViewRecommendedNews extends StatelessWidget {
+  ListViewRecommendedNews({super.key,required this.articles});
+ 
+  List<NewsItem> articles=[];
 
-class _ListViewRecommendedNewsState extends State<ListViewRecommendedNews> {
   @override
   Widget build(BuildContext context) {
     return  ListView.builder(
              physics:const NeverScrollableScrollPhysics(),
              shrinkWrap: true,
-              itemCount: 10,
-              itemBuilder: (context, index) =>const CardRecommendedNews(),
+              itemCount:articles.length,
+              itemBuilder: (context, index) =>CardRecommendedNews(newsItem: articles[index],),
             );
   }
 }
